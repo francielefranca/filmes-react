@@ -7,6 +7,7 @@ function Favoritos(){
     const [filmes, setFilmes] = useState([]);
 
     useEffect(()=>{
+
         const minhaLista = localStorage.getItem('@filmesreact');
         setFilmes(JSON.parse(minhaLista) || [] )
 
@@ -19,7 +20,7 @@ function Favoritos(){
 
         setFilmes(filtroFilmes);
         localStorage.setItem('@filmesreact', JSON.stringify(filtroFilmes));
-        alert('Filme removido com sucesso!');
+        alert("Filme removido com sucesso");
     }
 
     return(
@@ -35,8 +36,6 @@ function Favoritos(){
                     return(
                         <li key={item.id}>
                             <span>{item.title}</span>
-
-
 
                             <div>
                                 <Link to={`/filme/${item.id}`}>Ver detalhes</Link>

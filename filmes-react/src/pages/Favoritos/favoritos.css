@@ -43,37 +43,11 @@
     border: none;
     color: white;
     background-color: teal;
+    border-radius: 12px;
+    border: 2px solid teal; 
 }
 
 .meus-filmes img{
-    max-width:200px;
-    max-height:150px;
-    width: auto;
-    height: auto;
-}
-
-/** Classes for the displayed toast **/
-.Toastify__toast {
-    max-width:200px;
-    max-height:150px;
-    width: auto;
-    height: auto;
-}
-.Toastify__toast--rtl {
-    max-width:200px;
-    max-height:150px;
-    width: auto;
-    height: auto;
-}
-.Toastify__toast-body {
-    max-width:200px;
-    max-height:150px;
-    width: auto;
-    height: auto;
-}
-
-/** Used to position the icon **/
-.Toastify__toast-icon {
     max-width:200px;
     max-height:150px;
     width: auto;
