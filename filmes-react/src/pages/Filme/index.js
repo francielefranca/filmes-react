@@ -26,6 +26,7 @@ function Filme(){
                 setLoading(false);
             })
             .catch(()=>{
+                console.log('Filme nao encontrado.');
                 navigate('/', { replace: true });
                 return;
             })
@@ -35,7 +36,7 @@ function Filme(){
 
 
         return () => {
-            console.log('Componente foi desmontado');
+            console.log('Componente foi desmontado.');
         }
     }, [navigate, id])
 
@@ -44,16 +45,16 @@ function Filme(){
 
         let filmesSalvos = JSON.parse(minhaLista) || [];
 
-        const hasFilme = filmesSalvos.some((filmesSalvo)=> filmesSalvo === filme.id)
+        const hasFilme = filmesSalvos.some( (filmesSalvo) => filmesSalvo.id === filme.id)
 
         if(hasFilme){
-            alert('Esse filme ja esta na lista.');
+            alert("Esse filme ja esta na lista.");
             return;
         }
 
         filmesSalvos.push(filme);
         localStorage.setItem('@filmesreact', JSON.stringify(filmesSalvos));
-        alert('Filme salvo com sucesso!');
+        alert("Filme salvo com sucesso!");
     }
 
     if(loading){
