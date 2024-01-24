@@ -47,15 +47,13 @@ function Filme(){
         const hasFilme = filmesSalvos.some((filmesSalvo)=> filmesSalvo === filme.id)
 
         if(hasFilme){
-            alert('Filme já na lista...');
+            alert('Esse filme ja esta na lista.');
             return;
         }
 
         filmesSalvos.push(filme);
         localStorage.setItem('@filmesreact', JSON.stringify(filmesSalvos));
-        alert('Filme salvo com sucesso!')
-
-
+        alert('Filme salvo com sucesso!');
     }
 
     if(loading){

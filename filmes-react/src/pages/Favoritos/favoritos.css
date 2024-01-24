@@ -1,0 +1,81 @@
+
+.meus-filmes{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: teal;
+}
+
+.meus-filmes h1{
+    margin-bottom: 14px;
+}
+
+.meus-filmes span{
+    font-size: 18px;
+}
+
+.meus-filmes ul{
+    width: 720px;
+}
+
+.meus-filmes ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.meus-filmes div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meus-filmes div a{
+    text-decoration: none;
+    margin-right: 14px;
+    color: teal;
+}
+
+.meus-filmes button{
+    border: none;
+    color: white;
+    background-color: teal;
+}
+
+.meus-filmes img{
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+/** Classes for the displayed toast **/
+.Toastify__toast {
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+.Toastify__toast--rtl {
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+.Toastify__toast-body {
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+/** Used to position the icon **/
+.Toastify__toast-icon {
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}

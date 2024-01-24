@@ -23,3 +23,10 @@ header{
     color: teal;
     border-radius: 4px;
 }
+
+img{
+    max-width:75px;
+    max-height:65px;
+    width: auto;
+    height: auto;
+}
